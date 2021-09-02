@@ -1,0 +1,1 @@
+# wpintar-test
