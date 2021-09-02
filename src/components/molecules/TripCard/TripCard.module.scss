@@ -3,10 +3,11 @@
 .wrapper {
   width: 100%;
   display: flex;
-  background: teal;
+  background: #EDEDED;
   position: relative;
   overflow: hidden;
   margin-bottom: 1em;
+  min-height: 5em;
   .thumbnail {
     width: 100%;
     height: 100%;

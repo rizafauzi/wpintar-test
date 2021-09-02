@@ -18,7 +18,7 @@ const TripSection = () => {
 
   if (loading) {
     return (
-      <section className="my-6">
+      <section className={styles.wrapper}>
         <div className="shimmer mb-4" style={{ width: '40%', height: '2em' }}/>
         <div className={styles.content}>
           {Array.apply(null, Array(3)).map((_, index) => (
@@ -34,7 +34,7 @@ const TripSection = () => {
   }
 
   return (
-    <section className="my-6">
+    <section className={styles.wrapper}>
       <SectionTitle title="Today post top places to Visit" />
       <div className={styles.content}>
         {data.posts.map((dt, i) => (

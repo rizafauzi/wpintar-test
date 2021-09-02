@@ -36,14 +36,14 @@ const TripSection = () => {
 
   if (loading) {
     return (
-      <section className="my-6 is-flex is-flex-direction-column">
+      <section className={styles.wrapper}>
         <div className="shimmer mb-4" style={{ width: '40%', height: '2em' }}/>
         <div className={styles.loading}>
           {Array.apply(null, Array(3)).map((_, index) => (
             <div 
               key={index}
               className="shimmer" 
-              style={{ width: '100%', height: '30vh' }} 
+              style={{ width: '100%', height: '15em' }} 
             />
           ))}
         </div>
@@ -52,7 +52,7 @@ const TripSection = () => {
   }
 
   return (
-    <section className="my-6">
+    <section className={styles.wrapper}>
       <SectionTitle title="Get Inspired for your next trip" />
       {visitData.map((tripData, i) => (
         <div 
