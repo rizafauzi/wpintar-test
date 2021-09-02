@@ -1,0 +1,31 @@
+
+.wrapper {
+  z-index: 10;
+  padding: 3em;
+  margin-top: -18vh;
+  margin-bottom: 2em;
+  background: white;
+  box-shadow: 0px 0px 1em 0 rgba(0, 0, 0, 20%);
+  @media only screen and (max-width: 880px) {
+    padding: 2em;
+  }
+} 
+
+.benefitWrapper {
+  display: grid;
+  column-gap: 2em;
+  grid-template-columns: repeat(3, 1fr);
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 100%;
+  }
+  .benefit {
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 5em auto;
+      display: flex;
+      display: grid;
+      margin-bottom: 1em;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+}

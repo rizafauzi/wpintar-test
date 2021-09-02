@@ -1,0 +1,26 @@
+
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  .thumbnail {
+    width: 100%;
+    object-fit: cover;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  .bottomBar {
+    left: 0em;
+    width: 100%;
+    bottom: 0em;
+    display: flex;
+    padding: 1em 1.5em;
+    position: absolute;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}

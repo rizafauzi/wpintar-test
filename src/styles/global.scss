@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+// If need, change your variables before importing Bulma
+$title-color: #ff0000;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~bulma/bulma.sass";
+
+.shimmer {
+  position: relative;
+  background: #EDEDED;
+  display: inline-block;
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #E3E3E3 20%, #EDEDED 50%, #E3E3E3 70%);
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: -500px 0;
+  }
+  100% {
+    background-position: 500px 0;
+  }
+}
+
+button, input {
+  border: none;
+  background: transparent;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+  @media only screen and (max-width: 880px) {
+    font-size: 1.4em;
+  }
+}
+
+h4 {
+  font-size: 1.2rem;
+  @media only screen and (max-width: 880px) {
+    font-size: 1em;
+  }
+}
+
+h5 {
+  font-size: 1rem;
+  @media only screen and (max-width: 880px) {
+    font-size: 0.6em;
+  }
+}
